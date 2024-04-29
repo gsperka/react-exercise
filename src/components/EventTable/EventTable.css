@@ -1,0 +1,12 @@
+.eventTable {
+  width: 75% !important;
+  margin: 75px auto;
+}
+
+.eventTableHead {
+  background-color: lightgray;
+}
+
+.eventTableHead th {
+  font-weight: 800;
+}

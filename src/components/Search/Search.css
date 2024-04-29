@@ -1,0 +1,14 @@
+.searchForm {
+  display: flex;
+  justify-content: center;
+}
+
+.searchEvents {
+  margin-top: 20px;
+  width: 50%;
+}
+
+
+.submitButton {
+  margin-left: 20px !important;
+}
