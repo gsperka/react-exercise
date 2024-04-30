@@ -9,19 +9,31 @@ import Paper from '@mui/material/Paper';
 import './EventTable.css'
 
 function createData(
+  id: string,
   name: string,
   date: string,
   venue: string,
   url: number,
 ) {
-  return { name, date, venue, url };
+  return { id, name, date, venue, url };
 }
 
 function createRows(events) {
   let rows = []
 
   events.forEach(element => {
-    rows.push(createData(element.name, element.dates.start.localDate, element._embedded.venues[0].name, element.url))
+    let venueName = 'TBD'
+    let url = ''
+
+    if (element._embedded && element._embedded.venues !== undefined) {
+      venueName = element._embedded.venues[0].name
+    }
+
+    if (element.url !== undefined) {
+      url = element.url
+    }
+
+    rows.push(createData(element.id, element.name, element.dates.start.localDate, venueName, url))
   });
 
   return rows
@@ -33,7 +45,7 @@ export const EventTable = (props) => {
   let rows = createRows(events)
 
   if (rows.length === 0) {
-    return <div>No events found</div>
+    return <div className="noResults">No events found</div>
   }
 
   return (
@@ -50,7 +62,7 @@ export const EventTable = (props) => {
         <TableBody>
           {rows.map((row) => (
             <TableRow
-              key={row.url}
+              key={row.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row" sx={{minWidth: 300}}>

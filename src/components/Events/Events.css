@@ -1,9 +1,16 @@
 .eventsContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .loadingSpinner {
   display: block !important;
   margin: 75px auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px !important;
 }

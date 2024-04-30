@@ -10,3 +10,7 @@
 .eventTableHead th {
   font-weight: 800;
 }
+
+.noResults {
+  margin-top: 25px;
+}
