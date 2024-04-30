@@ -40,7 +40,7 @@ Run Tests:
 npm test
 ```
 
-This app uses the Ticketmaster API. You will need your own key and set it as an environment variable
+This app uses the Ticketmaster API. You can sign up for one here: https://developer-acct.ticketmaster.com/. You will need your own key and set it as an environment variable
 
 In your `/.env` file, paste:
 
