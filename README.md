@@ -1,1 +1,58 @@
-Sample README. More to come...
+# Ticketmaster Event Search App
+
+### Overview
+ 
+This is a sample react application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
+
+## To View Staging
+
+Staging link: https://react-ticket-example.s3.amazonaws.com/index.html
+
+Deployed using AWS. 
+
+This is a sample react application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
+
+## Clone Repo
+
+This app was created on an M3 Macbook Air using Sonoma 14.4.
+
+### Future improvement ideas
+- Make mobile responsive
+- Add sorting to table columns
+- Add a "show" page view
+
+### Getting Started
+```
+cd ~/Desktop 
+git clone https://github.com/gsperka/react-exercise
+cd react-exercise
+```
+
+Install dependecies:
+
+```
+npm install
+```
+
+Run Tests: 
+
+```
+npm test
+```
+
+This app uses the Ticketmaster API. You will need your own key and set it as an environment variable
+
+In your `/.env` file, paste:
+
+```
+REACT_APP_API_KEY=ABCD
+```
+
+Start your server:
+
+```
+npm start
+```
+
+Now you can visit [`localhost:3000`](http://localhost:3000) from your browser.
+
