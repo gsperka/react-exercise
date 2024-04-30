@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState } from 'react';
 import { AppContext } from '../../App';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -6,7 +6,7 @@ import './Search.css';
 
 export const Search = () => {
   const [searchText, setSearchText] = useState("");
-  let { keyword, setKeyword } = useContext(AppContext);
+  let { setKeyword } = useContext(AppContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();

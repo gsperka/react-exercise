@@ -20,7 +20,6 @@ export const Events = () => {
     axios
       .get(url)
       .then((response) => {
-        console.log(response);
         if (response.data._embedded === undefined) {
           setEvents([]);
           return;
@@ -33,6 +32,7 @@ export const Events = () => {
       }).finally(() => {
         setLoading(false);
     });;
+  // eslint-disable-next-line
   }, [keyword, currentPage]);
 
   const handlePagination = (event, value) => {

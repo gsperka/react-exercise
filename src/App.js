@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 import { Header } from "./components/Header/Header";
 import { Search } from "./components/Search/Search";
 import { Events } from "./components/Events/Events";

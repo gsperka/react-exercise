@@ -64,13 +64,14 @@ export const EventTable = (props) => {
             <TableRow
               key={row.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              className="eventTableRow"
             >
               <TableCell component="th" scope="row" sx={{minWidth: 300}}>
                 {row.name}
               </TableCell>
               <TableCell align="right" sx={{minWidth: 200}}>{row.date}</TableCell>
               <TableCell align="right">{row.venue}</TableCell>
-              <TableCell align="right"><a href={row.url} target="_blank">{row.url}</a></TableCell>
+              <TableCell align="right"><a href={row.url} target="_blank" rel="noreferrer">{row.url}</a></TableCell>
             </TableRow>
           ))}
         </TableBody>
