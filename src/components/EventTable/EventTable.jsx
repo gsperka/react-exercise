@@ -21,19 +21,19 @@ function createData(
 function createRows(events) {
   let rows = []
 
-  events.forEach(element => {
+  events.forEach(event => {
     let venueName = 'TBD'
     let url = ''
 
-    if (element._embedded && element._embedded.venues !== undefined) {
-      venueName = element._embedded.venues[0].name
+    if (event._embedded && event._embedded.venues !== undefined) {
+      venueName = event._embedded.venues[0].name
     }
 
-    if (element.url !== undefined) {
-      url = element.url
+    if (event.url !== undefined) {
+      url = event.url
     }
 
-    rows.push(createData(element.id, element.name, element.dates.start.localDate, venueName, url))
+    rows.push(createData(event.id, event.name, event.dates.start.localDate, venueName, url))
   });
 
   return rows

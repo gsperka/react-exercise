@@ -8,9 +8,9 @@ This is a sample react application utilizing the Ticketmaster API. By default, t
 
 Staging link: https://react-ticket-example.s3.amazonaws.com/index.html
 
-Deployed using AWS. 
+This app was deployed using AWS. It is a simple React application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
 
-This is a sample react application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
+Material UI was used to help guide some of the designs. 
 
 ## Clone Repo
 
@@ -45,7 +45,7 @@ This app uses the Ticketmaster API. You can sign up for one here: https://develo
 In your `/.env` file, paste:
 
 ```
-REACT_APP_API_KEY=ABCD
+REACT_APP_API_KEY=[your_api_key_here]
 ```
 
 Start your server:
