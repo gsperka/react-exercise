@@ -4,13 +4,13 @@
  
 This is a sample react application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
 
+Material UI was used to help guide some of the designs. 
+
 ## To View Staging
 
 Staging link: https://react-ticket-example.s3.amazonaws.com/index.html
 
-This app was deployed using AWS. It is a simple React application utilizing the Ticketmaster API. By default, the page loads showing all future events in Ticketmaster. You can use the search bar to search for a specific artist (i.e Imagine Dragons) and all relevant searches should come up. This is purely a front-end application with no back-end.
-
-Material UI was used to help guide some of the designs. 
+This app was deployed using AWS. 
 
 ## Clone Repo
 
